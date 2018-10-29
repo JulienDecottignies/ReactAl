@@ -11,23 +11,30 @@ controladdin ReactApp
     HorizontalStretch = true;
     HorizontalShrink = true;
     Scripts =
-    'https://unpkg.com/react@15/dist/react.js',
-    'https://unpkg.com/react-dom@15/dist/react-dom.js',
-    'src\ControlAddins\alreact\src\App.js',
+    // 'https://unpkg.com/react@15/dist/react.js',
+    // 'https://unpkg.com/react-dom@15/dist/react-dom.js',
+    // 'https://unpkg.com/react@16/umd/react.development.js',
+    // 'https://unpkg.com/react-dom@16/umd/react-dom.development.js',
+    // 'https://unpkg.com/babel-standalone@6/babel.min.js',
 
-    'src\ControlAddins\alreact\src\index.js';
+    'src\ControlAddins\React\src\modules\react.developement.js',
+    'src\ControlAddins\React\src\modules\react.dom.development.js',
+    'src\ControlAddins\React\src\modules\babel.min.js',
+    'src\ControlAddins\React\src\Components\ImageRow.js',
+    'src\ControlAddins\React\src\Components\App.js',
+    'src\ControlAddins\React\src\index.js';
 
     // 'src/ControlAddins/alreact/src/test.js';
     // StyleSheets =
     //     'style.css';
-    // StartupScript = 'src/ControlAddins/alreact/src/test.js';
+    // StartupScript = 'src\ControlAddins\React\startupscript.js';
     // RecreateScript = 'recreateScript.js';
     // RefreshScript = 'refreshScript.js';
     // Images =
     //     'image1.png',
     //     'image2.png';
-
     event OnControlReady()
 
-    procedure ShowComponent()
+    procedure LoadScripts();
+    // procedure ShowComponent()
 }

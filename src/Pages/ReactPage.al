@@ -13,13 +13,9 @@ page 50100 ReactPage
 
                 trigger OnControlReady()
                 begin
-                    CurrPage.ReactApp.ShowComponent();
+                    CurrPage.ReactApp.LoadScripts();
+                    // CurrPage.ReactApp.ShowComponent();
                 end;
-
-                //     trigger ControlAddinReady()
-                //     begin
-                //         CurrPage.ReactPage.RenderApp();
-                //     end;
             }
         }
     }
