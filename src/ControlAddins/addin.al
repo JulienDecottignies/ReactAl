@@ -1,4 +1,4 @@
-controladdin React
+controladdin ReactApp
 {
     RequestedHeight = 300;
     MinimumHeight = 300;
@@ -11,27 +11,23 @@ controladdin React
     HorizontalStretch = true;
     HorizontalShrink = true;
     Scripts =
-        'src\ControlAddins\control\static\js\1.70cb61b4.chunk.js',
-        'src\ControlAddins\control\static\js\main.3b25d55b.chunk.js',
-        'src/ControlAddins/control/static/js/1.70cb61b4.chunk.js.map',
-        'src/ControlAddins/control/static/js/main.3b25d55b.chunk.js.map',
-        'src/ControlAddins/control/static/js/runtime~main.229c360f.js.map',
+    'https://unpkg.com/react@15/dist/react.js',
+    'https://unpkg.com/react-dom@15/dist/react-dom.js',
+    'src\ControlAddins\alreact\src\App.js',
 
+    'src\ControlAddins\alreact\src\index.js';
 
-
-
-        'src\ControlAddins\control\static\js\runtime~main.229c360f.js';
-
-    StyleSheets = 'src/ControlAddins/control/static/css/main.08a2c93a.chunk.css';
-
-    StartupScript = 'src\ControlAddins\control\static\js\main.3b25d55b.chunk.js';
+    // 'src/ControlAddins/alreact/src/test.js';
+    // StyleSheets =
+    //     'style.css';
+    // StartupScript = 'src/ControlAddins/alreact/src/test.js';
     // RecreateScript = 'recreateScript.js';
     // RefreshScript = 'refreshScript.js';
     // Images =
     //     'image1.png',
     //     'image2.png';
 
-    event ControlAddinReady()
+    event OnControlReady()
 
-    procedure RenderApp()
+    procedure ShowComponent()
 }

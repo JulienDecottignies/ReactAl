@@ -8,6 +8,7 @@
             "server": "http://BCNovember",
             "serverInstance": "nav",
             "authentication": "UserPassword",
+            "schemaUpdateMode": "Recreate"
         }
     ]
 }

@@ -1,14 +1,20 @@
 page 50100 ReactPage
 {
     PageType = Card;
+    UsageCategory = Documents;
 
     layout
     {
         area(Content)
         {
-            usercontrol(ReactPage; React)
+            usercontrol(ReactApp; ReactApp)
             {
                 ApplicationArea = All;
+
+                trigger OnControlReady()
+                begin
+                    CurrPage.ReactApp.ShowComponent();
+                end;
 
                 //     trigger ControlAddinReady()
                 //     begin
