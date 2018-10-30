@@ -13,8 +13,10 @@ page 50100 ReactPage
 
                 trigger OnControlReady()
                 begin
+                    CurrPage.ReactApp.GetNames(GetCustomerNames());
                     CurrPage.ReactApp.LoadReactApp();
                 end;
+
             }
         }
     }
@@ -34,6 +36,19 @@ page 50100 ReactPage
             }
         }
     }
+
+    local procedure GetCustomerNames(): JsonArray
+    var
+        Customer: Record Customer;
+        Names: JsonArray;
+    begin
+        Customer.FindSet();
+        repeat
+            Names.Add(Customer.Name);
+        until Customer.Next() = 0;
+
+        exit(Names)
+    end;
 
     var
         myInt: Integer;

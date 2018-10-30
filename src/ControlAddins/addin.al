@@ -17,14 +17,19 @@ controladdin ReactApp
     // 'https://unpkg.com/react-dom@16/umd/react-dom.development.js',
     // 'https://unpkg.com/babel-standalone@6/babel.min.js',
 
-    'src\ControlAddins\React\src\modules\react.developement.js',
-    'src\ControlAddins\React\src\modules\react.dom.development.js',
-    'src\ControlAddins\React\src\modules\babel.min.js',
+    'src\ControlAddins\React\src\.modules\react.developement.js',
+    'src\ControlAddins\React\src\.modules\react.dom.development.js',
+    'src\ControlAddins\React\src\.modules\babel.min.js',
     'src\ControlAddins\React\src\Components\ImageRow.js',
+    'src\ControlAddins\React\src\Components\CustomerInfos.js',
     'src\ControlAddins\React\src\Components\App.js',
+
     'src\ControlAddins\React\src\index.js';
 
-    // 'src/ControlAddins/alreact/src/test.js';
+
+
+    // 'src\ControlAddins\React\src\ComponentMethods\AppMethods.js';
+
     // StyleSheets =
     //     'style.css';
     // StartupScript = 'src\ControlAddins\React\startupscript.js';
@@ -33,8 +38,11 @@ controladdin ReactApp
     // Images =
     //     'image1.png',
     //     'image2.png';
-    event OnControlReady()
+    event OnControlReady();
 
     procedure LoadReactApp();
-    // procedure ShowComponent()
+
+    procedure GetNames(CustomersName: JsonArray);
+
+
 }

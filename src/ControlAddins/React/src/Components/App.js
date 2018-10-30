@@ -1,9 +1,28 @@
+
 class App extends React.Component{
+
+  constructor(props){
+    super(props)
+    this.state ={
+      names: _namesArr,
+    }
+  }
   render(){
+
     return(
+      <div>
       <ImageRow
-        imagesource='https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
+        imagesource={this.state.picture}
       />
+      {this.state.names.map(
+        name => {
+          return(
+            <CustomerInfos
+              customername = {name}
+            />)
+        }
+      )}
+      </div>
     )
   }
 }
