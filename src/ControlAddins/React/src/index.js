@@ -6,7 +6,7 @@ function SetType(){
     document.querySelector('script[src*="index.js"]').setAttribute('type', 'text/babel');
 }
 
-function LoadScripts(){
+function LoadReactApp(){
 
     ReactDOM.render(
         React.createElement(App, null),

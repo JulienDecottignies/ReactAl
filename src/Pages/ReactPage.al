@@ -13,8 +13,7 @@ page 50100 ReactPage
 
                 trigger OnControlReady()
                 begin
-                    CurrPage.ReactApp.LoadScripts();
-                    // CurrPage.ReactApp.ShowComponent();
+                    CurrPage.ReactApp.LoadReactApp();
                 end;
             }
         }

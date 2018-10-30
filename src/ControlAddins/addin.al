@@ -35,6 +35,6 @@ controladdin ReactApp
     //     'image2.png';
     event OnControlReady()
 
-    procedure LoadScripts();
+    procedure LoadReactApp();
     // procedure ShowComponent()
 }
