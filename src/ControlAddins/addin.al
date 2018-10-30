@@ -16,21 +16,24 @@ controladdin ReactApp
     // 'https://unpkg.com/react@16/umd/react.development.js',
     // 'https://unpkg.com/react-dom@16/umd/react-dom.development.js',
     // 'https://unpkg.com/babel-standalone@6/babel.min.js',
+    // 'https://unpkg.com/react-stripe-elements@latest/dist/react-stripe-elements.min.js',
 
     'src\ControlAddins\React\src\.modules\react.developement.js',
     'src\ControlAddins\React\src\.modules\react.dom.development.js',
     'src\ControlAddins\React\src\.modules\babel.min.js',
-    'src\ControlAddins\React\src\Components\ImageRow.js',
-    'src\ControlAddins\React\src\Components\CustomerInfos.js',
-    'src\ControlAddins\React\src\Components\App.js',
+    'src\ControlAddins\React\src\.modules\react.stripe.elements.min.js',
+    'https://js.stripe.com/v3/',
 
+    'src\ControlAddins\React\src\Components\CardSection.js',
+    'src\ControlAddins\React\src\Components\Checkout.js',
+    'src\ControlAddins\React\src\App.js',
     'src\ControlAddins\React\src\index.js';
 
 
 
     // 'src\ControlAddins\React\src\ComponentMethods\AppMethods.js';
 
-    // StyleSheets =
+    StyleSheets = 'src\ControlAddins\React\src\Style.css';
     //     'style.css';
     // StartupScript = 'src\ControlAddins\React\startupscript.js';
     // RecreateScript = 'recreateScript.js';
@@ -41,8 +44,5 @@ controladdin ReactApp
     event OnControlReady();
 
     procedure LoadReactApp();
-
-    procedure GetNames(CustomersName: JsonArray);
-
 
 }

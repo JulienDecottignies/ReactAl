@@ -13,7 +13,6 @@ page 50100 ReactPage
 
                 trigger OnControlReady()
                 begin
-                    CurrPage.ReactApp.GetNames(GetCustomerNames());
                     CurrPage.ReactApp.LoadReactApp();
                 end;
 
